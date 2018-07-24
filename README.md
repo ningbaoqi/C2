@@ -22,6 +22,8 @@
 [对象](https://github.com/ningbaoqi/C2/blob/master/README-dui.md)
 ### 友元
 [友元](https://github.com/ningbaoqi/C2/blob/master/README-friend.md)
+### 集合与迭代器
+[集合与迭代器](https://github.com/ningbaoqi/C2/blob/master/README-list.md)
 ### 名字空间
 [名字空间](https://github.com/ningbaoqi/C2/blob/master/README-namespace.md)
 ### 链接、代码编写实例、编译器预定义的宏
