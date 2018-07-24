@@ -22,3 +22,5 @@
 [对象](https://github.com/ningbaoqi/C2/blob/master/README-dui.md)
 ### 友元
 [友元](https://github.com/ningbaoqi/C2/blob/master/README-friend.md)
+### 名字空间
+[名字空间](https://github.com/ningbaoqi/C2/blob/master/README-namespace.md)
