@@ -178,5 +178,35 @@ class Shape{
               virtual void rotate(int ) = 0;//纯虚函数
 };
 ```
+### 派生类
++ 实现继承：通过共享基类所提供的特性来减少实现工作量；接口继承：通过一个公共基类提供的接口允许不同派生类互换使用；`接口继承`通常被称为`运行时多态`或`动态多态`；`模版`所提供的类的通用性与继承无关，常被称为`编译时多态`或`静态多态`；
+
+```
+struct Employee{
+       string first_name , family_name;
+       char middle_initial;
+       Date hiring_date;
+       short department;
+};
+
+struct Manager : public Employee{//public公有继承
+       list<Employee*> group;
+       short level;
+};
+//多重继承
+public A : public B , public C{}//多重继承如果两个基类中有相同名称的成员，在调用时会出现二义性，可以使用a1.B::a = 3;a1.C::a = 4;
+```
+
++ `Manager`派生自`Employee`，除了自己成员`group`、`level`外，类`Manager`还拥有`Employee`的成员`first_name`、`family_name`等；派生一个类没有任何内存额外开销，所需要内存就是成员所需要空间；在子类转换成父类时可以使用隐式类型转换，但是父类转换成子类的时候，必须使用强制类型转换；通过指向基类对象的指针，只能访问派生类中的基类成员，而不能访问派生类增加的成员；
+
+```
+void g(Manager mm , Employee ee){
+       Employee* pe = &mm;//正确，每个Manager都是一个Employee
+       Manager* pm= &ee;//错误，并不是每个Employee都是一个Manager
+       pm = static_cast<Manager*>(pe);//强制类型转换
+}
+```
+
+
 
 
