@@ -30,3 +30,5 @@
 [异常处理、静态断言、程序概述、命名转换](https://github.com/ningbaoqi/C2/blob/master/README-assert.md)
 ### 并发、资源管理、正则表达式
 [并发、资源管理、正则表达式](https://github.com/ningbaoqi/C2/blob/master/README-zheng.md)
+### 标准库
+[标准库](https://github.com/ningbaoqi/C2/blob/master/README-lib.md)
