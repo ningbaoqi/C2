@@ -24,3 +24,5 @@
 [友元](https://github.com/ningbaoqi/C2/blob/master/README-friend.md)
 ### 名字空间
 [名字空间](https://github.com/ningbaoqi/C2/blob/master/README-namespace.md)
+### 链接、代码编写实例、编译器预定义的宏
+[链接、代码编写实例、编译器预定义的宏](https://github.com/ningbaoqi/C2/blob/master/README-define.md)
