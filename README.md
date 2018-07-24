@@ -12,6 +12,8 @@
 ### 引用
 [引用](https://github.com/ningbaoqi/C2/blob/master/README-yin.md)
 
+### 指针
+[指针](https://github.com/ningbaoqi/C2/blob/master/README-zhi.md)
 ### Class
 [Class](https://github.com/ningbaoqi/C2/blob/master/README-class.md)
 ### Function
