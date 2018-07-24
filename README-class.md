@@ -221,6 +221,41 @@ class D : public B , public C {//D类构造函数，在初始化表中对所有�
 ```
 + 在最后的派生类中不仅要负责对其直接基类进行初始化，还要负责对虚基类初始化；C++编译系统只执行最后的派生类对虚基类的构造函数的调用，而忽略虚基类的其他派生类对虚基类的构造函数的调用，这就保证了虚基类的数据成员不会被多次初始化；
 
+### 模版类
+
+```
+template<typename T>
+class vector{
+       private:
+              T* elem;
+              int sz;
+       public:
+              vector(int s);
+              ~vector(){delete[] elem;}
+              T& operator[](int i);
+              const T& operator[](int i) const;
+              int size() const {return sz;}
+}
+```
+
+```
+template<typename T>
+vector<T>::vector(int s){
+       if(s < 0) throw Negative_size();
+       elem = new T[s];
+       sz = s;
+}
+template<typename T>
+T& vector<T>::operator[](int i) const{
+       if(i < 0 || size() <= i) throw out_of_range("vector::operator[]");
+              return elem[i];
+}
+//使用模版类
+vector<char> vc(200);
+vector<string> vs(17);
+```
+
+
 
 
 
