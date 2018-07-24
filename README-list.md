@@ -74,3 +74,56 @@ int get_number(const string& s){
 ### unordered_map
 + 标准库unordered_map为string提供了默认的哈希函数，查询速度相当快；
 ![image](https://github.com/ningbaoqi/C2/blob/master/gif/pic-4.jpg)
+
+```
+unordered_map<string , int> phone_book{
+       {"david" , 123456},
+       {"bob" , 234567},
+       {"cacy" , 345678}
+};
+int get_number(const string& s){
+       return phone_number[s];
+}
+```
+### 集合概述
+
+|标准库集合|概述|
+|------|------|
+|`Vector<T>`|可变大小向量|
+|`List<T>`|双向链表|
+|`forward_list<T>`|单向链表|
+|`deque<T>`|双向队列|
+|`set<T>`|集合|
+|`mutiset<T>`|允许重复值的集合|
+|`map<K,V>`|关联数组|
+|`mutimap<K,V>`|允许重复关键字的map|
+|`unordered_map<K,V>`|采用哈希搜索的map|
+|`unordered_mutimap<K,V>`|采用哈希搜索的mutimap|
+|`unordered_set<T>`|采用哈希搜索的set|
+|`unordered_mutiset<T>`|采用哈希搜索的mutiset|
+
+### 使用迭代器
+
+```
+bool has_c(const string& s , char c){
+       return find(s.begin() , s.end() , c) != s.end;//find在一个序列中查找一个值，返回的结果是指向我们找到的元素的迭代器
+}
+```
+
+#### 算法概述
+
+|部分标准库算法|概述|
+|------|------|
+|`p = find(b , e , x)`|`p是[b : e)中第一个满足*p == x的迭代器`|
+|`p = find_if(b , e , f)`|`p是[b : e)中第一个满足f(*p) == true的迭代器`|
+|`n = count(b , e , x)`|`n是[b : e)中满足 *q == x的元素 *q的数目`|
+|`n = count_if(b , e,  f)`|`n是[b : e)中满足f(*q) == true的元素*q的数目`|
+|`replace(b , e, v, v2)`|`将[b : e)中满足*q == v的元素*q替换为v2`|
+|`replace_if(b , e, f,  v2)`|`将[b:e)中满足f(*q) == true的元素*q替换为v2`|
+|`p = copy(b , e , out)`|`将 [b : e)`拷贝到[out : p)|
+|`p = copy_if(b , e, out , f )`|`将[b : e)中满足f(*q) == true的元素*q拷贝到[out : p)`|
+|`p = unique_copy(b , e , out , f)`|`将[b : e)拷贝到[out : p)，不拷贝连续的重复的元素`|
+|`sort(b , e)`|`排序[b : e)中的元素，用<作为排序标准`|
+|`sort(b , e , f)`|`排序[b : e)中的元素，用谓词f作为排序标准`|
+|`(p1 , p2) = equal_range(b , e, v)`|`[p1 : p2]是已经排序序列[b : e)的子序列，其中元素的值都等于v，本质上等价于二分搜索v`|
+|`p = merge(b , e, b2 , e2 , out)`|`将两个序列[b: e)和[b1 : b2]合并，结果保存到[out : p)`|
