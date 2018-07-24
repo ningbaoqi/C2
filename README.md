@@ -26,3 +26,5 @@
 [名字空间](https://github.com/ningbaoqi/C2/blob/master/README-namespace.md)
 ### 链接、代码编写实例、编译器预定义的宏
 [链接、代码编写实例、编译器预定义的宏](https://github.com/ningbaoqi/C2/blob/master/README-define.md)
+### 异常处理、静态断言、程序概述、命名转换
+[异常处理、静态断言、程序概述、命名转换](https://github.com/ningbaoqi/C2/blob/master/README-assert.md)
