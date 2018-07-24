@@ -20,3 +20,5 @@
 [Function](https://github.com/ningbaoqi/C2/blob/master/README-function.md)
 ### 对象
 [对象](https://github.com/ningbaoqi/C2/blob/master/README-dui.md)
+### 友元
+[友元](https://github.com/ningbaoqi/C2/blob/master/README-friend.md)
