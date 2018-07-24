@@ -18,3 +18,5 @@
 [Class](https://github.com/ningbaoqi/C2/blob/master/README-class.md)
 ### Function
 [Function](https://github.com/ningbaoqi/C2/blob/master/README-function.md)
+### 对象
+[对象](https://github.com/ningbaoqi/C2/blob/master/README-dui.md)
