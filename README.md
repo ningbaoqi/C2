@@ -8,6 +8,10 @@
 [语句、声明、初始化](https://github.com/ningbaoqi/C2/blob/master/README-init.md)
 ### 数组
 [数组](https://github.com/ningbaoqi/C2/blob/master/README-array.md)
+
+### 引用
+[引用](https://github.com/ningbaoqi/C2/blob/master/README-yin.md)
+
 ### Class
 [Class](https://github.com/ningbaoqi/C2/blob/master/README-class.md)
 ### Function
