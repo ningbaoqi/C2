@@ -9,3 +9,5 @@
 
 ### Class
 [Class](https://github.com/ningbaoqi/C2/blob/master/README-class.md)
+### Function
+[Function](https://github.com/ningbaoqi/C2/blob/master/README-function.md)
