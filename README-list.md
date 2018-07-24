@@ -61,3 +61,16 @@ void f(const Entry& ee , List<Entry>::iterator p , List<Entry>::iterator q){
 ### map
 + `map`也被称为`关联数组`或`字典`，`map`通常用平衡二叉树实现；
 ![image](https://github.com/ningbaoqi/C2/blob/master/gif/pic-3.jpg)
+```
+map<string , int> phone_book = {
+       {"david" , 123456},
+       {"bob" , 234567},
+       {"cacy" , 345678}
+};
+int get_number(const string& s){
+       return phone_book[s];
+}
+```
+### unordered_map
++ 标准库unordered_map为string提供了默认的哈希函数，查询速度相当快；
+![image](https://github.com/ningbaoqi/C2/blob/master/gif/pic-4.jpg)
