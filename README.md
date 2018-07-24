@@ -6,3 +6,6 @@
 
 ### 语句、声明、初始化
 [语句、声明、初始化](https://github.com/ningbaoqi/C2/blob/master/README-init.md)
+
+### Class
+[Class](https://github.com/ningbaoqi/C2/blob/master/README-class.md)
